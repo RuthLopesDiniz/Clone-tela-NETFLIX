@@ -6,28 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div>
-        <img src="./assets/netflix.svg" alt="Logo-Netflix">
-        <button>Entrar</button>
+    <div id="container">
+        <div id="cabecalho">
+            <img id="logo-netflix" src="./assets/netflix.svg" alt="Logo-Netflix">
+            <button id="botao-entrar">Entrar</button>
+        </div>
+
+        <div>
+            <h1>Filmes, séries e muito mais, sem limites!</h1>
+            <p id="paragrafo-assista">Assista onde quiser, cancele quando quiser.</p>
+            <p id="paragrafo-pronto">Pronto para assitir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+
+            <div id="formulario">
+                <input placeholder="Email">
+                <button id="botao-email">Vamos lá <img src="./assets/seta.svg" alt="seta"></button>
+            </div>
+
+        </div>
     </div>
 
-    <div>
-        <h1>Filmes, séries e muito mais, sem limites!</h1>
-        <p>Assista onde quiser, cancele quando quiser.</p>
-        <p>Pronto para assitir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+    <div id="rodape">
+        <h2>Perguntas frequentes:</h2>
+        <button id="botao-pergunta">O que é a Netflix? <img src="./assets/fechar.svg" id="imgpergunta"></button>
 
-        <input placeholder="Email">
-        <button>Vamos lá <img src="./assets/seta.svg" alt="seta"></button>
+        <div id="pergunta">
+            <p class="paragrafo-pergunta">A netflix é um serviço de tranmissão online que oferece ampla variedade de series, filmes e
+                documentários. </p>
+                <br>
+            <p class="paragrafo-pergunta">Você pode assitir a quantos filmes e séries quiser, quando e onde quiser.</p>
+        </div>
     </div>
 
-    <div>
-        
-    </div>
-
-    
 </body>
 
 </html>
