@@ -33,13 +33,19 @@
         <h2>Perguntas frequentes</h2>
         <button id="botao-pergunta">O que é a Netflix? <img src="./assets/fechar.svg" id="imgpergunta"></button>
 
+
         <div id="pergunta">
             <p class="paragrafo-pergunta">A netflix é um serviço de transmissão online que oferece ampla variedade de
                 series, filmes e
                 documentários. </p>
             <br>
-            <p class="paragrafo-pergunta">Você pode assitir a quantos filmes e séries quiser, quando e onde quiser.</p>
+            <p class="paragrafo-pergunta">Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem
+                comerciais – tudo por um
+                preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries
+                e filmes..</p>
         </div>
+
+
     </div>
 
 </body>
@@ -49,13 +55,13 @@
     let menu = document.getElementById("pergunta")
     let imagem = document.getElementById("imgpergunta")
 
-    function abacate(){
-        if(menu.style.display == "none"){
+    function abacate() {
+        if (menu.style.display == "none") {
             menu.style.display = "block"
             imagem.id = "image-pergunta-girar"
         }
-        else{
-            menu.style.display ="none"
+        else {
+            menu.style.display = "none"
             imagem.id = "imgpergunta"
         }
     }
@@ -63,6 +69,3 @@
 </script>
 
 </html>
-
-/*  Usando função em java scrip para minimizar e maximizar conteúdo. Usando o addEventListener para monitorar o clique no botão e mostrar
-o texto*/
