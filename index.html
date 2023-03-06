@@ -22,7 +22,7 @@
             <p id="paragrafo-pronto">Pronto para assitir? Informe seu email para criar ou reiniciar sua assinatura.</p>
 
             <div id="formulario">
-                <input placeholder="Email">
+                <input type="email" name="email" placeholder="Email">
                 <button id="botao-email">Vamos lá <img src="./assets/seta.svg" alt="seta"></button>
             </div>
 
@@ -30,17 +30,39 @@
     </div>
 
     <div id="rodape">
-        <h2>Perguntas frequentes:</h2>
+        <h2>Perguntas frequentes</h2>
         <button id="botao-pergunta">O que é a Netflix? <img src="./assets/fechar.svg" id="imgpergunta"></button>
 
         <div id="pergunta">
-            <p class="paragrafo-pergunta">A netflix é um serviço de tranmissão online que oferece ampla variedade de series, filmes e
+            <p class="paragrafo-pergunta">A netflix é um serviço de transmissão online que oferece ampla variedade de
+                series, filmes e
                 documentários. </p>
-                <br>
+            <br>
             <p class="paragrafo-pergunta">Você pode assitir a quantos filmes e séries quiser, quando e onde quiser.</p>
         </div>
     </div>
 
 </body>
 
+<script>
+    let botao = document.getElementById("botao-pergunta")
+    let menu = document.getElementById("pergunta")
+    let imagem = document.getElementById("imgpergunta")
+
+    function abacate(){
+        if(menu.style.display == "none"){
+            menu.style.display = "block"
+            imagem.id = "image-pergunta-girar"
+        }
+        else{
+            menu.style.display ="none"
+            imagem.id = "imgpergunta"
+        }
+    }
+    botao.addEventListener("click", abacate)
+</script>
+
 </html>
+
+/*  Usando função em java scrip para minimizar e maximizar conteúdo. Usando o addEventListener para monitorar o clique no botão e mostrar
+o texto*/
