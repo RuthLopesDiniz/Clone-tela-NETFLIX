@@ -129,3 +129,35 @@ h2{
 .paragrafo-pergunta{
     font-size: 24px;
 }
+
+@media (max-width:800px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .filmes{
+        width: 70%;
+        margin: auto;
+    }
+
+    #botao-email{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    h1{
+        width: 300px;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    #botao-pergunta{
+        width: 80vw;
+    }
+
+    #pergunta{
+        width: 80vw;
+    }
+}
